@@ -3,8 +3,8 @@
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
-* [2. Instaliación](#2-instalación)
-* [3. Diagrama de flujo ](#3-diagrama-de-flujo)
+* [2. Instaliación](#2-diagrama-de-flujo)
+* [3. Diagrama de flujo ](#3-instalación)
 * [4. Javascript API](#4-javascript-api)
 * [5. CLI Command Line Interface](#5-cli-command-line-interface)
 * [6. Opciones](#6-opciones)
@@ -17,20 +17,18 @@
 
 ## 1. Preámbulo
 
-[Markdown](https://es.wikipedia.org/wiki/Markdown) es un lenguaje de marcado
-ligero muy popular entre developers. Es usado en muchísimas plataformas que
-manejan texto plano (GitHub, foros, blogs, ...), y es muy común
-encontrar varios archivos en ese formato en cualquier tipo de repositorio
-(empezando por el tradicional `README.md`).
+Markdown Links es un herramientaque lee y analiza archivos con extensión .md (Markdown), con el fin de verificar los links que contengan y reportar sus estadísticas de validación.
 
 ### Objetivo del proyecto
+El objetivo del proyecto es realizar un programa que muestra tanto los enlaces válidos, como los enlaces con error. El programa funciona como una librería npm. El algoritmo realiza operaciones como: identificar ruta, convertirla en ruta absoluta, leer archivos, identificar y validar links. 
 
+## 2. Diagrama de flujo
+A traves de la diagrama de flujo se puede entender la lógica de la librería.
+![Diagrama de flujo](img/Diagrama-de-flujo.jpg)
 
-## 2. Instalación
-
-![md-links](https://user-images.githubusercontent.com/110297/42118443-b7a5f1f0-7bc8-11e8-96ad-9cc5593715a6.jpg)
-
-## 3. Diagrama de flujo
+## 3. Instalación
+Para instalar la librería se ejecuta el siguiente comando en la consola:
+`npm install monicabartha/md-links`
 
 ## 4. Javascript API
 
