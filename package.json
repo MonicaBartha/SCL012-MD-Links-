@@ -1,4 +1,34 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "* [1. Preámbulo](#1-preámbulo)\r * [2. Instaliación](#2-instalación)\r * [3. Diagrama de flujo ](#3-diagrama-de-flujo)\r * [4. Javascript API](#4-javascript-api)\r * [5. CLI Command Line Interface](#5-cli-command-line-interface)\r * [6. Opciones](#6-opciones)\r * [6. Algoritmo](#6-algoritmo)\r * [7. Backlog](#7-backlog)\r * [8. Autor](#8-autor)",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MonicaBartha/SCL012-MD-Links-.git"
+  },
+  "keywords": [],
+  "author": "Monica Bartha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MonicaBartha/SCL012-MD-Links-/issues"
+  },
+  "homepage": "https://github.com/MonicaBartha/SCL012-MD-Links-#readme",
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "eslint": "^6.8.0",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "jest": "^25.1.0",
+    "markdown-link-extractor": "^1.2.2",
+    "marked": "^0.8.0",
+    "node-fetch": "^2.6.0"
+  }
 }
