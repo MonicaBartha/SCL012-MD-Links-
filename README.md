@@ -5,12 +5,9 @@
 * [1. Preámbulo](#1-preámbulo)
 * [2. Instaliación](#2-diagrama-de-flujo)
 * [3. Diagrama de flujo ](#3-instalación)
-* [4. Javascript API](#4-javascript-api)
-* [5. CLI Command Line Interface](#5-cli-command-line-interface)
-* [6. Opciones](#6-opciones)
-* [6. Algoritmo](#6-algoritmo)
-* [7. Backlog](#7-backlog)
-* [8. Autor](#8-autor)
+* [4. Uso](#4-uso)
+* [5. Backlog](#7-backlog)
+* [6. Autor](#8-autor)
 
 
 ***
@@ -24,103 +21,34 @@ El objetivo del proyecto es realizar un programa que muestra tanto los enlaces v
 
 ## 2. Diagrama de flujo
 A traves de la diagrama de flujo se puede entender la lógica de la librería.
-![Diagrama de flujo](img/Diagrama-de-flujo.jpg)
+![Diagrama de flujo](.img/Diagrama-de-flujo.jpg)
 
 ## 3. Instalación
-Para instalar la librería se ejecuta el siguiente comando en la consola:
+Para instalar la librería se ejecuta el siguiente comando en la consola:<br>
 `npm install monicabartha/md-links`
 
-## 4. Javascript API
-
-Diseñar tu propia librería es una experiencia fundamental para cualquier
-desarrollador porque que te obliga a pensar en la interfaz (API) de tus
-_módulos_ y cómo será usado por otros developers. Debes tener especial
-consideración en peculiaridades del lenguaje, convenciones y buenas prácticas.
-
-A continuación puedes ver los objetivos de aprendizaje de este proyecto:
+## 4. Uso
 
 ### Argumentos
-
-* [ ] Uso de callbacks
-* [ ] Consumo de Promesas
-* [ ] Creacion de Promesas
-* [ ] Modulos de JS (CommonJS vs ES Modules)
-* [ ] Recursión
+* `path:` Ruta absoluta o relativa al archivo o directorio.
+* `options:` Un objeto con las siguientes propiedades:
+  * `validate:` Booleano que determina si se desea validar los links encontrados.
 
 ### Valor de retorno
 
-* [ ] Sistema de archivos ([fs](https://nodejs.org/api/fs.html), [path](https://nodejs.org/api/path.html))
-* [ ] [package.json](https://docs.npmjs.com/files/package.json)
-* [ ] crear módulos [(CommonJS)](https://nodejs.org/docs/latest-v0.10.x/api/modules.html)
-* [ ] Instalar y usar módulos ([npm](https://www.npmjs.com/))
-* [ ] [npm-scripts](https://docs.npmjs.com/misc/scripts)
-* [ ] CLI (Command Line Interface - Interfaz de Línea de Comando)
-* [ ] [http.get](https://nodejs.org/api/http.html#http_http_get_options_callback)
+La función retorna una promesa (Promise) que resuelva a un arreglo (Array) de objetos (Object), donde cada objeto representa un link y contiene las siguientes propiedades:
 
-## 5. CLI Command Line Interface
+* `href:` URL encontrada.
+* `text:` Texto que aparecía dentro del link (<a>).
+* `file:` Ruta del archivo donde se encontró el link.
 
-* [ ] Testeo de tus funciones
-* [ ] Testeo asíncrono
-* [ ] Uso de librerias de Mock
-* [ ] Mocks manuales
-* [ ] Testeo para multiples Sistemas Operativos
+Deberás importar la librería en tu archivo .js:
+`const mdLinks = require('@monicabartha/md-links');`
 
-## 6. Opciones
+## 5. Backlog
 
-* Este proyecto se debe "resolver" de manera individual.
+Se creó un proyecto en GitHub para la organización y planificación del mismo, haciendo uso de milestones (por sprint), issues para asignar tareas por funciones y dentro de cada una un checklist con tareas más pequeñas.
+![Diagrama de flujo](.img/git-backlog.jpg)
 
-* La librería y script ejecutable (herramienta de línea de comando -
-  CLI) debe estar implementada en JavaScript para ser ejecutada con
-  Node.js. **Está permitido usar librerías externas**.
-
-* Tu módulo debe ser instalable via `npm install <github-user>/md-links`. Este
-  módulo debe incluir tanto un _ejecutable_ que podamos invocar en la línea de
-  comando como una interfaz que podamos importar con `require` para usarlo
-  programáticamente.
-
-* Los tests unitarios deben cubrir un mínimo del 70% de _statements_,
-  _functions_, _lines_ y _branches_. Te recomendamos explorar [Jest](https://jestjs.io/)
-  para tus pruebas unitarias.
-[Link](https://www.draw.io/)
-* Para este proyecto no está permitido utilizar `async/await`.
-
-* Para este proyecto es opcional el uso de ES Modules `(import/export)`, en el
-  caso optes utilizarlo deberás de crear un script de `build` en el `package.json`
-  que los transforme en `requires` y `module.exports` con ayuda de babel.
-
-## 7. Algoritmo
-
-Para comenzar este proyecto tendrás que hacer un _fork_ y _clonar_ este
-repositorio.
-
-Antes de comenzar a codear, es necesario crear un plan de acción. Esto debería
-quedar detallado en el `README.md` de tu repo y en una serie de _issues_
-y _milestones_ para priorizar y organizar el trabajo, y para poder hacer
-seguimiento de tu progreso.
-
-Dentro de cada _milestone_ se crearán y asignarán los _issues_ que cada quien
-considere necesarios.
-
-## 8. Backlog
-
-* `README.md` con descripción del módulo, instrucciones de instalación/uso,
-  documentación del API y ejemplos. Todo lo relevante para que cualquier
-  developer que quiera usar tu librería pueda hacerlo sin inconvenientes.
-* `index.js`: Desde este archivo debes exportar una función (`mdLinks`).
-* `package.json` con nombre, versión, descripción, autores, licencia,
-  dependencias, scripts (pretest, test, ...)
-* `.editorconfig` con configuración para editores de texto. Este archivo no se
-  debe cambiar.
-* `.eslintrc` con configuración para linter. Este archivo no
-  se debe cambiar.
-* `.gitignore` para ignorar `node_modules` u otras carpetas que no deban
-  incluirse en control de versiones (`git`).
-* `test/md-links.spec.js` debe contener los tests unitarios para la función
-  `mdLinks()`. Tu inplementación debe pasar estos tets.
-
-
-## 9. Autor
-
-Módulo instalable via `npm install <github-user>/md-links`. Este módulo debe
-incluir tanto un ejecutable como una interfaz que podamos importar con `require`
-para usarlo programáticamente.
+## 6. Autor
+Proyecto realizado por [Monica Bartha](https://github.com/MonicaBartha)
