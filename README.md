@@ -21,7 +21,7 @@ El objetivo del proyecto es realizar un programa que muestra tanto los enlaces v
 
 ## 2. Diagrama de flujo
 A traves de la diagrama de flujo se puede entender la lógica de la librería.
-![Diagrama de flujo](.img/Diagrama-de-flujo.jpg)
+![Diagrama de flujo](img/Diagrama-de-flujo.jpg "Diagrama de flujo")
 
 ## 3. Instalación
 Para instalar la librería se ejecuta el siguiente comando en la consola:<br>
@@ -47,8 +47,8 @@ Deberás importar la librería en tu archivo .js:
 
 ## 5. Backlog
 
-Se creó un proyecto en GitHub para la organización y planificación del mismo, haciendo uso de milestones (por sprint), issues para asignar tareas por funciones y dentro de cada una un checklist con tareas más pequeñas.
-![Diagrama de flujo](.img/git-backlog.jpg)
+Se creó un proyecto en GitHub para la organización y planificación del mismo, haciendo uso de milestones (por sprint), issues para asignar tareas por funciones y dentro de cada una un checklist con tareas más pequeñas.<br>
+![Diagrama de flujo](img/git-backlog.jpg "Backlog")
 
 ## 6. Autor
 Proyecto realizado por [Monica Bartha](https://github.com/MonicaBartha)
