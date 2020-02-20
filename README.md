@@ -20,7 +20,7 @@ Markdown Links es un herramientaque lee y analiza archivos con extensión .md (M
 El objetivo del proyecto es realizar un programa que muestra tanto los enlaces válidos, como los enlaces con error. El programa funciona como una librería npm. El algoritmo realiza operaciones como: identificar ruta, convertirla en ruta absoluta, leer archivos, identificar y validar links. 
 
 ## 2. Diagrama de flujo
-A traves de la diagrama de flujo se puede entender la lógica de la librería.
+A traves de la diagrama de flujo se puede entender la lógica de la librería.<br>
 ![Diagrama de flujo](img/Diagrama-de-flujo.jpg "Diagrama de flujo")
 
 ## 3. Instalación
