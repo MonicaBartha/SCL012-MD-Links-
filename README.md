@@ -1,5 +1,7 @@
 # Markdown Links
 
+![Code](img/code-computer.jpg "Code")
+
 ## Índice
 
 * [1. Preámbulo](#1-preámbulo)
@@ -52,3 +54,11 @@ Se creó un proyecto en GitHub para la organización y planificación del mismo,
 
 ## 6. Autor
 Proyecto realizado por [Monica Bartha](https://github.com/MonicaBartha)
+
+### Links para testear
+[Good](https://aloeverachile.com/)
+[Good](https://aloeverachile.com/aloe-vera-en-chile/)
+[Good](https://aloeverachile.com/productos-forever-living/bebidas-naturales/)
+[Broken](https://aloeverachile.com/regalo-para-ninos)
+[Broken](https://aloeverachile.com/hidratacion-para-rostro)
+[Broken](https://aloeverachile.com/ideas-de-regalo)
